@@ -1,0 +1,19 @@
+{
+  "name": "chatwork-slack-bot",
+  "version": "1.0.0",
+  "description": "ChatWorkで自分宛てメンションのうち未返信のものを検知してSlackに通知するBot",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "check": "node src/index.js --once"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "license": "UNLICENSED",
+  "dependencies": {
+    "@slack/web-api": "^7.8.0",
+    "dotenv": "^16.4.5",
+    "node-cron": "^4.6.0"
+  }
+}
